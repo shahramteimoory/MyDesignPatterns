@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Decoratoe_Wrapper
 {
-    public abstract class Component
+    public abstract class Component // این میتونی اینترفیسم باشه حتما لازم نیست ابسترک کلاس باشه
     {
         public abstract void Operation();
     }

@@ -10,15 +10,15 @@
         }
         public override void Operation()
         {
-            
+            // اگه بخوایم فقط یک ویژگی رو تغییر بدیم لازم نیست این کلاسو ابسترک بسازیم و فعالیت زیرو انجام بدیم میتونیم همینجا فیچر رو اضافه کنیم
             _component.Operation();
         }
     }
     public class ConcreateDecoretor: Decoretor
     {
-        public ConcreateDecoretor(Component component):base(component)
+        public ConcreateDecoretor(Component component):base(component)        //یدونه کامپوننت میسازیم و میدیمش به کلاس پدر
         {
-            //یدونه کامپوننت میسازیم و میدیمش به کلاس پدر
+            //میتونیم بجای اینکه توی متد تغییر رو اضافه کنیم اینجا توی سازنده اضافش کنیم
         }
         public override void Operation()
         {
